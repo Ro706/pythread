@@ -9,8 +9,8 @@ import datetime
 def times():
     while True:
         times = strftime("%H:%M", localtime())
-        print(times)
-        if times =='17:36':
+        # print(times)
+        if times =='17:42':
             winsound.PlaySound('alarm.wav', winsound.SND_FILENAME)
             break
         else:
