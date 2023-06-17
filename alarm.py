@@ -5,12 +5,12 @@ from time import sleep
 from time import strftime
 from time import localtime
 import datetime
-
+alarm = input("Enter a time :")
 def times():
     while True:
         times = strftime("%H:%M", localtime())
         # print(times)
-        if times =='17:42':
+        if times ==alarm:
             winsound.PlaySound('alarm.wav', winsound.SND_FILENAME)
             break
         else:
@@ -22,7 +22,7 @@ def printf():
         print('hello')
         sleep(1)
         n+=1
-        if n == 10:
+        if n == 100:
             print("Done")
             break
         else:
@@ -33,5 +33,5 @@ t1.start()
 t2 = Thread(target=times)
 t2.start()
 
-    
+
 
