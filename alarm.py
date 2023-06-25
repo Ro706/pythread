@@ -5,7 +5,7 @@ from time import sleep
 from time import strftime
 from time import localtime
 import datetime
-alarm = input("Enter a time :")
+alarm = "14:25"
 def times():
     while True:
         times = strftime("%H:%M", localtime())
